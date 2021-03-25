@@ -1,0 +1,18 @@
+@use "../abstract" as *;
+* {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background-color: $main-bg;
+}
+.active {
+  color: $active-color;
+}
+.container {
+  max-width: calcRem(1200);
+  margin: auto;
+}

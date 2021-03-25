@@ -1,0 +1,20 @@
+@use "../abstract" as *;
+.btn {
+  color: $font-color;
+  font: {
+    weight: 700;
+    size: calcRem(20);
+  }
+  padding: calcRem(8) calcRem(45);
+  border-radius: calcRem(25);
+  outline: none;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn__fill {
+  background-color: $active-color;
+  &:is(:active) {
+    background: $passive-color;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../abstract" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calcRem(24) 0;
+  color: $font-color;
+}
+.nav__brand {
+  font-size: calcRem(32);
+  font-weight: 800;
+  color: $active-color;
+}
+.nav__items {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item {
+  padding: calcRem(8) calcRem(16);
+  font-size: calcRem(14);
+  font-weight: bold;
+  text-transform: uppercase;
+}
